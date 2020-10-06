@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[hover over product]]>
+    </line>
+    <line>
+      <![CDATA[click on account]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session End=====]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50603" started-at="2020-10-04T14:09:08 MDT" finished-at="2020-10-04T14:09:59 MDT">
+    <groups>
+      <group name="Functional">
+        <method signature="myRunner.RunAllTests()[pri:0, instance:tests.myRunner@1d29cf23]" name="RunAllTests" class="tests.myRunner"/>
+      </group> <!-- Functional -->
+    </groups>
+    <test name="Default test" duration-ms="50603" started-at="2020-10-04T14:09:08 MDT" finished-at="2020-10-04T14:09:59 MDT">
+      <class name="tests.myRunner">
+        <test-method status="PASS" signature="initializeTest()[pri:0, instance:tests.myRunner@1d29cf23]" name="initializeTest" is-config="true" duration-ms="20193" started-at="2020-10-04T14:09:08 MDT" finished-at="2020-10-04T14:09:28 MDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTest -->
+        <test-method status="FAIL" signature="RunAllTests()[pri:0, instance:tests.myRunner@1d29cf23]" name="RunAllTests" duration-ms="29325" started-at="2020-10-04T14:09:28 MDT" finished-at="2020-10-04T14:09:58 MDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Small Business Bank Accounts] but found [Open a Small Business Bank Account | TD Canada Trust]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Small Business Bank Accounts] but found [Open a Small Business Bank Account | TD Canada Trust]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at Pages.ParentPage.getPageTitle(ParentPage.java:78)
+at Pages.ChildPage.assertAccountPage(ChildPage.java:34)
+at tests.myRunner.RunAllTests(myRunner.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[hover over product]]>
+            </line>
+            <line>
+              <![CDATA[click on account]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RunAllTests -->
+        <test-method status="PASS" signature="killTest()[pri:0, instance:tests.myRunner@1d29cf23]" name="killTest" is-config="true" duration-ms="1013" started-at="2020-10-04T14:09:58 MDT" finished-at="2020-10-04T14:09:59 MDT">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session End=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- killTest -->
+      </class> <!-- tests.myRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
